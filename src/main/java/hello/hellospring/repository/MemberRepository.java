@@ -1,0 +1,22 @@
+package hello.hellospring.repository;
+
+import hello.hellospring.domain.Member;
+
+import java.util.List;
+import java.util.Optional;
+
+//repository는 단순히 데이터를 넣었다 뺐다함.
+public interface MemberRepository {
+
+    Member save(Member member);
+    Optional<Member> findById(Long id);
+    Optional<Member> findByName(String name);
+    List<Member> findAll();
+}
+
+
+
+
+
+
+
